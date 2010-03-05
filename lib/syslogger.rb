@@ -45,4 +45,7 @@ class Syslogger
   def level=(logger_level)
     @level = logger_level
   end
+  
+  # Does nothing as Syslog isn't kept open by logging methods
+  def close; end
 end

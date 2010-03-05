@@ -21,5 +21,9 @@ describe "Syslogger" do
     end
   end
   
+  it "should respond to a close call" do
+    Syslogger.new.should respond_to :close
+  end
+  
   # TODO: test logger level
 end
